@@ -13,8 +13,12 @@ savedState = "2.8.7"
 runtimeLivedata = "1.7.6"
 lifecycleViewmodelCompose = "2.9.0"
 material2 = "1.7.6"
+loggingInterceptor = "4.12.0"
+dataStore = "1.1.7"
 
 [libraries]
+com-squareup-okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "loggingInterceptor"}
+androidx-datastore-preferences = { group = "androidx.datastore", name ="datastore-preferences", version.ref = "dataStore"}
 androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "material2" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
