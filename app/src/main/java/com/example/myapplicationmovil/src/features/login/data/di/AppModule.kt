@@ -1,4 +1,4 @@
-package com.example.myapplicationmovil.src.features.login.data.di
+package com.example.myapplicationmovil.src.core.di
 
 import com.example.myapplicationmovil.src.core.network.RetrofitHelper
 import com.example.myapplicationmovil.src.features.login.data.datasource.AuthService
