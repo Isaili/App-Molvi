@@ -2,14 +2,15 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
 }
 
 android {
-    namespace = "com.example.myapplicationmovil"
+    namespace = "com.example.tasks"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.myapplicationmovil"
+        applicationId = "com.example.tasks"
         minSdk = 31
         targetSdk = 35
         versionCode = 1
@@ -41,18 +42,24 @@ android {
 
 dependencies {
     implementation("androidx.navigation:navigation-compose:2.9.0")
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.lifecycle.viewmodel.savedstate)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
-    implementation(libs.retrofit)
-    implementation(libs.retrofit.gson)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.compose.material.icons.extended)
+    implementation(libs.bundles.camerax)
+    implementation(libs.accompanist.permissions)
+    implementation(libs.coil.compose)
+    implementation(libs.com.squareup.okhttp3.logging.interceptor)
+    implementation(libs.androidx.datastore.preferences)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -60,7 +67,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-    implementation(libs.androidx.compose.material.icons.extended)
-    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
-    implementation(libs.androidx.datastore.preferences)
 }

@@ -1,8 +1,8 @@
-package com.example.myapplicationmovil.src.core.interceptor
+package com.example.myapplicationmovil.src.core.network.interceptor
 
 import okhttp3.logging.HttpLoggingInterceptor
 
-fun  provideLoggingInterceptor(): HttpLoggingInterceptor{
+fun provideLoggingInterceptor(): HttpLoggingInterceptor{
     return HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
     }

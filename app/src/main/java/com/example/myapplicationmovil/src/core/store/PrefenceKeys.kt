@@ -2,6 +2,6 @@ package com.example.myapplicationmovil.src.core.store
 
 import androidx.datastore.preferences.core.stringPreferencesKey
 
-object PrefenceKeys {
+object PreferenceKeys {
     val TOKEN = stringPreferencesKey("token")
 }

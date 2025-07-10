@@ -1,4 +1,4 @@
-package com.example.myapplicationmovil.src.core.interceptor
+package com.example.myapplicationmovil.src.core.network.interceptor
 
 import okhttp3.Interceptor
 import okhttp3.Response
